@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Score AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">AI</span>
+            <span>StudentScore</span>
+        </div>
+
+        <a href="{{ url_for('predict_datapoint') }}" class="nav-btn">
+            Predict Score
+        </a>
+    </nav>
+
+
+    <main class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ✦ AI Powered Prediction
+            </div>
+
+            <h1>
+                Predict Student
+                <span>Performance</span>
+            </h1>
+
+            <p>
+                Analyze student demographics, education background,
+                lunch type and test preparation to predict their
+                mathematics performance using machine learning.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="{{ url_for('predict_datapoint') }}"
+                   class="primary-btn">
+                    Start Prediction
+                    <span>→</span>
+                </a>
+
+                <a href="#features" class="secondary-btn">
+                    Explore
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="card-glow"></div>
+
+            <div class="chart-header">
+                <div>
+                    <small>AI ANALYSIS</small>
+                    <h3>Student Performance</h3>
+                </div>
+
+                <div class="status">
+                    ● LIVE
+                </div>
+            </div>
+
+            <div class="chart">
+
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-4"></div>
+                <div class="bar bar-5"></div>
+                <div class="bar bar-6"></div>
+                <div class="bar bar-7"></div>
+
+            </div>
+
+            <div class="score-preview">
+                <div>
+                    <span>Predicted Score</span>
+                    <strong>82.4</strong>
+                </div>
+
+                <div class="trend">
+                    ↗ 12.8%
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <section id="features" class="features">
+
+        <div class="section-heading">
+            <span>HOW IT WORKS</span>
+            <h2>From student data to prediction</h2>
+        </div>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">01</div>
+                <h3>Enter Details</h3>
+                <p>
+                    Provide student information such as education,
+                    lunch and test preparation.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">02</div>
+                <h3>AI Analysis</h3>
+                <p>
+                    Your input is processed through the trained
+                    machine learning pipeline.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">03</div>
+                <h3>Get Prediction</h3>
+                <p>
+                    Receive the predicted mathematics score instantly.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>StudentScore AI · Machine Learning Project</p>
+    </footer>
+
+</body>
+</html>
